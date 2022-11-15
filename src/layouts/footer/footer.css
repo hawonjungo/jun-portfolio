@@ -1,12 +1,17 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
+html {
   padding: 0;
+  margin: 0;
+  background-color: #050801;
 }
-
+.cover {
+  margin: 0;
+  height: auto;
+  background-color: #c15b22;
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+}
 .cursor {
-  width: var(--size);
-  height: var(--size);
   border-radius: 50%;
   position: absolute;
   left: 0;
@@ -41,7 +46,7 @@
   background: rgba(255, 255, 255, 0.08);
   color: #fff;
   transition: background 200ms ease, color 200ms ease;
-  cursor: none;
+  /* cursor: none; */
 }
 .socialBox:hover button {
   background: rgba(255, 255, 255, 0.04);
