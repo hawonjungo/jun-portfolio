@@ -1,26 +1,27 @@
 import React from "react";
 import "./header.css";
+import "../../css/grid.css";
 
 const Header = () => {
   return (
     <div>
       {" "}
-      <div class="nav">
-        <a href="!#">
+      <div class="row nav">
+        <a class="col l-1 m-12 " href="!#">
           <span></span>
           <span></span>
           <span></span>
           <span></span>
           About
         </a>
-        <a href="!#">
+        <a class="col l-1 m-12 " href="!#">
           <span></span>
           <span></span>
           <span></span>
           <span></span>
           Portfolio
         </a>
-        <a href="!#">
+        <a class="col l-1 m-12 " href="!#">
           <span></span>
           <span></span>
           <span></span>

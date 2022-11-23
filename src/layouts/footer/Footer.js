@@ -1,10 +1,11 @@
 import React from "react";
 import "./footer.css";
 import {
-  FaTwitterSquare,
+  FaGithubSquare,
   FaInstagramSquare,
-  FaYoutube,
+  FaYoutubeSquare,
   FaFacebookSquare,
+  FaLinkedin,
 } from "react-icons/fa";
 // import "./magnetic.js";
 
@@ -23,13 +24,16 @@ const Footer = () => {
             <FaFacebookSquare />
           </button>
           <button>
-            <FaTwitterSquare />
+            <FaLinkedin />
+          </button>
+          <button>
+            <FaGithubSquare />
           </button>
           <button>
             <FaInstagramSquare />
           </button>
           <button>
-            <FaYoutube />
+            <FaYoutubeSquare />
           </button>
         </div>
       </div>
