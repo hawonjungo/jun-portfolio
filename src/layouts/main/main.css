@@ -1,31 +1,29 @@
-.body {
-  margin: 0;
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+.bold {
+  font-weight: 700;
+  color: #5a5a5af2;
+}
+
+.main {
   background-color: #050801;
 }
-.container {
-  max-width: 960px;
-  margin-right: auto;
-  margin-left: auto;
+.wrapInfor {
   background-color: white;
-  width: 100%;
-  z-index: 100;
-  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
-}
-
-.box {
   padding: 50px;
-  display: flex;
 }
-
 .avatar {
-  flex: 0 0 auto;
-  width: 40%;
 }
-.img-fluid {
+.ava {
   max-width: 100%;
   height: auto;
   vertical-align: middle;
   box-shadow: 0px 0px 4px 1px #373141ab;
+}
+.infor {
+  text-align: left;
 }
 .sayHi {
   background-color: #f16a52;
@@ -40,7 +38,7 @@
   border-radius: 2px;
   position: relative;
 }
-.sayHi::after {
+.sayHi:after {
   content: "";
   width: 0;
   height: 0;
@@ -49,20 +47,28 @@
   display: block;
   position: absolute;
   border-style: solid;
-  border-width: 0 0 10px 10px;
-  border-color: transparent #f16a52;
+  border-width: 0 0 8px 8px;
+  border-left-color: #f16a52;
+  border-bottom-color: transparent;
 }
-.info {
-  width: 60%;
-  margin: 20px;
-  text-align: left;
+.inforName p:first-child {
+  font-weight: 700;
+  color: #585858;
+  font-size: 24px;
+  margin: 0;
 }
-.name p:first-child {
-  font-size: 24pt;
+.inforName p:first-child span {
+  font-weight: 300;
 }
-.iconInfo {
-  height: auto;
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-around;
+.inforName p {
+  margin: 0 12px 12px 0;
+}
+.textInfor p {
+  margin: 12px;
+}
+.iconInfor {
+  display: inline-block;
+}
+.codeLang {
+  padding: 0 20px;
 }
