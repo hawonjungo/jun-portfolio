@@ -44,7 +44,7 @@ const Main = () => {
                       technologies for any projects needed or to upgrade coding
                       skills. Design, build, public Web and Android mobile or
                       cross-apps from scratch, graduate with a portfolio with
-                      coding languages:
+                      coding languages and related as:
                     </p>
                     <div class="codeLang">
                       <div class="row">
@@ -55,7 +55,9 @@ const Main = () => {
                         <div class="col l-6">
                           ● Visual Studio Code ● Android studio
                         </div>
-                        <div class="col l-6">● NodeJS ● Java ● C++ ● C#</div>
+                        <div class="col l-6">
+                          ● NodeJS ● Java ● C++ ● React Native{" "}
+                        </div>
                       </div>
                     </div>
 

@@ -1,15 +1,12 @@
+* {
+  box-sizing: border-box;
+}
 html {
   padding: 0;
   margin: 0;
-  background-color: #050801;
 }
 .cover {
-  margin: 0;
-  height: auto;
-  background-color: #c15b22;
-  max-width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
+  background-color: #050801;
 }
 .cursor {
   border-radius: 50%;
@@ -33,6 +30,12 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 0;
+  height: auto;
+  background-color: #c15b22;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .socialBox button {
   --size: 60px;

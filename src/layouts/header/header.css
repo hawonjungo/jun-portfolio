@@ -8,16 +8,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   background: #050801;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
+  width: 100%;
 }
 a {
   position: relative;
   display: inline-block;
   padding: 15px 20px;
-  margin: 30px 0;
+  margin: 8px 0;
   color: #03e9f4;
   text-decoration: none;
   text-transform: uppercase;
@@ -27,6 +27,27 @@ a {
   margin-right: 30px;
 }
 a:hover {
+  background: #03e9f4;
+  color: #050801;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 200px #03e9f4;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+a.btn {
+  position: relative;
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 8px 0;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 2px;
+  overflow: hidden;
+  margin-right: 20px;
+  background-color: #c15b22;
+}
+a:hover.btn {
   background: #03e9f4;
   color: #050801;
   box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
