@@ -29,25 +29,27 @@ import elementGame from "../../img/elementGame.PNG";
 import PortfolioDetail from "../../components/PortfolioDetail";
 
 const Portfolio = () => {
-  const portfolioList = {
-    junProject: {
+  const portfolioList = [
+    {
       id: 1,
+      projectImg: avatar,
       projectName: "Jun's Portfolio",
       projectSubName: "Responsive Web Design",
       desc: "A portfolio website to introduce myself and show all the project I have done. Following the best practices and latest trends in ReactJS and responsive web development using HTML5 and CSS.",
       techs: "React, HTML, CSS, JavaScript.",
-      icons: "icon example",
+      icons: [<FaReact />, <FaHtml5 />, <FaCss3Alt />, <SiJavascript />],
     },
-    ommyProject: {
+    {
       id: 2,
+      projectImg: ommy,
       projectName: "Ommy Ecommerce",
       projectSubName: "Responsive Web Design",
       desc: "An E-commerce selling swimwear website. It was a group project with two members. Working with clients in order to ensure a friendly user interface, and make sure the website had what they needed such as single-page detail products, shopping carts, payment sections..etc. Always communicated, and then worked together to deliver the best e-commerce solutions, helping client show and organize products",
       techs:
         "MERN( MongoDB, Express, ReactJS, NodeJS), build RESTful API for products.",
-      icons: "icon example",
+      icons: [<SiMongodb />, <SiExpress />, <FaReact />, <FaNodeJs />],
     },
-  };
+  ];
   return (
     <div>
       <Header />
@@ -96,7 +98,7 @@ const Portfolio = () => {
             Projects
           </h1>
           {/* projun */}
-          <div class="row wellProject" style={{ marginTop: "50px" }}>
+          {/* <div class="row wellProject" style={{ marginTop: "50px" }}>
             <div class="col l-3">
               {" "}
               <div class="well shadow up-hover color-hover ">
@@ -139,7 +141,7 @@ const Portfolio = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           {/* ommy */}
           <div class="row wellProject">
             <div class="col l-3">
@@ -460,12 +462,18 @@ const Portfolio = () => {
             </div>
           </div>
           {/* TEst component */}
-          <PortfolioDetail
-            projectName={portfolioList.junProject.projectName}
-            projectSubName={portfolioList.junProject.projectSubName}
-            decs={portfolioList.junProject.desc}
-            techs={portfolioList.junProject.techs}
-          />
+
+          {portfolioList.map((project) => (
+            <PortfolioDetail
+              key={project.id}
+              projectImg={project.projectImg}
+              projectName={project.projectName}
+              projectSubName={project.projectSubName}
+              desc={project.desc}
+              techs={project.techs}
+              icons={project.icons}
+            />
+          ))}
         </div>
       </div>
       <Footer />

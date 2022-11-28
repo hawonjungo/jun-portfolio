@@ -14,14 +14,14 @@ import { MdDraw } from "react-icons/md";
 import { SiJavascript, SiMongodb, SiExpress } from "react-icons/si";
 import avatar from "../img/n.jpg";
 
-const PortfolioDetail = ({ projectName, projectSubName, decs, techs }) => {
-  /*
-        projectName: "Jun's Project",
-    projectSubName: "Responsive Web Design",
-    desc: "A portfolio website to introduce myself and show all the project I have done. Following the best practices and latest trends in ReactJS and responsive web development using HTML5 and CSS.",
-    techs: "React, HTML, CSS, JavaScript.",
-    icons: "icon example",
-    */
+const PortfolioDetail = ({
+  projectImg,
+  projectName,
+  projectSubName,
+  decs,
+  techs,
+  icons,
+}) => {
   return (
     <div>
       {" "}
@@ -29,7 +29,7 @@ const PortfolioDetail = ({ projectName, projectSubName, decs, techs }) => {
         <div class="col l-3">
           {" "}
           <div class="well shadow up-hover color-hover ">
-            <img src={avatar} alt="Avatar" class="ava" />
+            <img src={projectImg} alt="Avatar" class="ava" />
             <h2>{projectName}</h2>
           </div>
         </div>
@@ -43,12 +43,11 @@ const PortfolioDetail = ({ projectName, projectSubName, decs, techs }) => {
             <div class="projectInfor">
               <p>{decs}</p>
               <p>Technologies involved:</p>
-              <p> {techs}.</p>
+              <p> {techs}</p>
               <h1>
-                <FaReact />
-                <FaHtml5 />
-                <FaCss3Alt />
-                <SiJavascript />
+                {icons.map((icon) => {
+                  return icon;
+                })}
               </h1>
               <div class="btnSide">
                 <div class="btnLeft">
