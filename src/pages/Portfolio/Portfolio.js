@@ -26,7 +26,28 @@ import todo from "../../img/Todo.PNG";
 import javaRoster from "../../img/javaRoster.PNG";
 import elementGame from "../../img/elementGame.PNG";
 
+import PortfolioDetail from "../../components/PortfolioDetail";
+
 const Portfolio = () => {
+  const portfolioList = {
+    junProject: {
+      id: 1,
+      projectName: "Jun's Portfolio",
+      projectSubName: "Responsive Web Design",
+      desc: "A portfolio website to introduce myself and show all the project I have done. Following the best practices and latest trends in ReactJS and responsive web development using HTML5 and CSS.",
+      techs: "React, HTML, CSS, JavaScript.",
+      icons: "icon example",
+    },
+    ommyProject: {
+      id: 2,
+      projectName: "Ommy Ecommerce",
+      projectSubName: "Responsive Web Design",
+      desc: "An E-commerce selling swimwear website. It was a group project with two members. Working with clients in order to ensure a friendly user interface, and make sure the website had what they needed such as single-page detail products, shopping carts, payment sections..etc. Always communicated, and then worked together to deliver the best e-commerce solutions, helping client show and organize products",
+      techs:
+        "MERN( MongoDB, Express, ReactJS, NodeJS), build RESTful API for products.",
+      icons: "icon example",
+    },
+  };
   return (
     <div>
       <Header />
@@ -80,7 +101,7 @@ const Portfolio = () => {
               {" "}
               <div class="well shadow up-hover color-hover ">
                 <img src={avatar} alt="Avatar" class="ava" />
-                <h2>Jun's Portfolio</h2>
+                <h2>{portfolioList.junProject.projectName}</h2>
               </div>
             </div>
             <div class="col l-9">
@@ -164,6 +185,7 @@ const Portfolio = () => {
                         href="https://ommy-surf.herokuapp.com/"
                         class="btn s-full-width"
                         target="_blank"
+                        rel="noreferrer"
                       >
                         Check online
                       </a>
@@ -207,11 +229,7 @@ const Portfolio = () => {
                   </h1>
                   <div class="btnSide">
                     <div class="btnLeft">
-                      <a
-                        href="https://ommy-surf.herokuapp.com/"
-                        class="btn s-full-width"
-                        target="_blank"
-                      >
+                      <a href="!#" class="btn s-full-width" target="_blank">
                         Check online
                       </a>
                       <a href="!#" class="btn s-full-width">
@@ -254,11 +272,7 @@ const Portfolio = () => {
                   </h1>
                   <div class="btnSide">
                     <div class="btnLeft">
-                      <a
-                        href="https://ommy-surf.herokuapp.com/"
-                        class="btn s-full-width"
-                        target="_blank"
-                      >
+                      <a href="!#" class="btn s-full-width" target="_blank">
                         Check online
                       </a>
                       <a href="!#" class="btn s-full-width">
@@ -304,11 +318,7 @@ const Portfolio = () => {
                   </h1>
                   <div class="btnSide">
                     <div class="btnLeft">
-                      <a
-                        href="https://ommy-surf.herokuapp.com/"
-                        class="btn s-full-width"
-                        target="_blank"
-                      >
+                      <a href="#" class="btn s-full-width" target="_blank">
                         Check online
                       </a>
                       <a href="!#" class="btn s-full-width">
@@ -351,11 +361,7 @@ const Portfolio = () => {
                   </h1>
                   <div class="btnSide">
                     <div class="btnLeft">
-                      <a
-                        href="https://ommy-surf.herokuapp.com/"
-                        class="btn s-full-width"
-                        target="_blank"
-                      >
+                      <a href="!#" class="btn s-full-width" target="_blank">
                         Check online
                       </a>
                       <a href="!#" class="btn s-full-width">
@@ -398,11 +404,7 @@ const Portfolio = () => {
                   </h1>
                   <div class="btnSide">
                     <div class="btnLeft">
-                      <a
-                        href="https://ommy-surf.herokuapp.com/"
-                        class="btn s-full-width"
-                        target="_blank"
-                      >
+                      <a href="!#" class="btn s-full-width" target="_blank">
                         Check online
                       </a>
                       <a href="!#" class="btn s-full-width">
@@ -445,11 +447,7 @@ const Portfolio = () => {
                   </h1>
                   <div class="btnSide">
                     <div class="btnLeft">
-                      <a
-                        href="https://ommy-surf.herokuapp.com/"
-                        class="btn s-full-width"
-                        target="_blank"
-                      >
+                      <a href="!#" class="btn s-full-width" target="_blank">
                         Check online
                       </a>
                       <a href="!#" class="btn s-full-width">
@@ -461,6 +459,13 @@ const Portfolio = () => {
               </div>
             </div>
           </div>
+          {/* TEst component */}
+          <PortfolioDetail
+            projectName={portfolioList.junProject.projectName}
+            projectSubName={portfolioList.junProject.projectSubName}
+            decs={portfolioList.junProject.desc}
+            techs={portfolioList.junProject.techs}
+          />
         </div>
       </div>
       <Footer />
