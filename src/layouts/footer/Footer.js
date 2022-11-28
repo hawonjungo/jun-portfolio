@@ -11,11 +11,11 @@ import {
 
 const Footer = () => {
   return (
-    <div class="cover">
-      <div class="socialBox">
+    <div className="cover">
+      <div className="socialBox">
         {" "}
         {/* --partial magnetic-- */}
-        <div class="grid grid-cols-4  social ">
+        <div className="grid grid-cols-4  social ">
           <button
             onclick="location.href='https://www.facebook.com/junsubarashii'"
             target="_blank"
@@ -37,8 +37,8 @@ const Footer = () => {
           </button>
         </div>
       </div>
-      {/* <div class="cursor cursor--large"></div>
-      <div class="cursor cursor--small"></div> */}
+      {/* <div className="cursor cursor--large"></div>
+      <div className="cursor cursor--small"></div> */}
     </div>
   );
 };

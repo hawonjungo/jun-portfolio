@@ -25,22 +25,22 @@ const PortfolioDetail = ({
   return (
     <div>
       {" "}
-      <div class="row wellProject" style={{ marginTop: "50px" }}>
-        <div class="col l-3">
+      <div className="row wellProject" style={{ marginTop: "50px" }}>
+        <div className="col l-3">
           {" "}
-          <div class="well shadow up-hover color-hover ">
-            <img src={projectImg} alt="Avatar" class="ava" />
+          <div className="well shadow up-hover color-hover ">
+            <img src={projectImg} alt="Avatar" className="ava" />
             <h2>{projectName}</h2>
           </div>
         </div>
-        <div class="col l-9">
+        <div className="col l-9">
           {" "}
-          <div class="well shadow up-hover color-hover ">
+          <div className="well shadow up-hover color-hover ">
             <h1>
               <FaDev style={{ display: "inline-block" }} />
             </h1>
             <h2>{projectSubName}</h2>
-            <div class="projectInfor">
+            <div className="projectInfor">
               <p>{decs}</p>
               <p>Technologies involved:</p>
               <p> {techs}</p>
@@ -49,12 +49,12 @@ const PortfolioDetail = ({
                   return icon;
                 })}
               </h1>
-              <div class="btnSide">
-                <div class="btnLeft">
-                  <a href="!#" class="btn s-full-width">
+              <div className="btnSide">
+                <div className="btnLeft">
+                  <a href="!#" className="btn s-full-width">
                     Check online
                   </a>
-                  <a href="!#" class="btn s-full-width">
+                  <a href="!#" className="btn s-full-width">
                     Github
                   </a>
                 </div>

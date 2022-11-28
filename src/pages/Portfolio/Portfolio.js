@@ -53,35 +53,35 @@ const Portfolio = () => {
   return (
     <div>
       <Header />
-      <div class="portfolioPage">
-        <div class="nameShow">
+      <div className="portfolioPage">
+        <div className="nameShow">
           <h1 data-text="A strong willingness to learn">
             <span>A strong willingness to learn</span>
           </h1>
         </div>
       </div>
-      <div class="portContainer">
+      <div className="portContainer">
         {/* <!-- Logo Card --> */}
-        <div class="LogoCard">
-          <div class="row showcase stm-font">
-            <div class="col l-4 hidden-xs">
-              <div class="well shadow up-hover color-hover ">
+        <div className="LogoCard">
+          <div className="row showcase stm-font">
+            <div className="col l-4 hidden-xs">
+              <div className="well shadow up-hover color-hover ">
                 <h1>
                   <FaRegLightbulb style={{ display: "inline-block" }} />
                 </h1>
                 <h2>Concept</h2>
               </div>
             </div>
-            <div class="col l-4 hidden-xs">
-              <div class="well shadow up-hover color-hover ">
+            <div className="col l-4 hidden-xs">
+              <div className="well shadow up-hover color-hover ">
                 <h1>
                   <MdDraw style={{ display: "inline-block" }} />
                 </h1>
                 <h2>Design</h2>
               </div>
             </div>
-            <div class="col l-4 hidden-xs">
-              <div class="well shadow up-hover color-hover ">
+            <div className="col l-4 hidden-xs">
+              <div className="well shadow up-hover color-hover ">
                 <h1>
                   <FaCode style={{ display: "inline-block" }} />
                 </h1>
@@ -92,28 +92,28 @@ const Portfolio = () => {
         </div>
         {/* End logo card */}
         {/* Projects  */}
-        <div class="showProject">
+        <div className="showProject">
           <h1>
             <FaMegaport style={{ width: "50px" }} />
             Projects
           </h1>
           {/* projun */}
-          {/* <div class="row wellProject" style={{ marginTop: "50px" }}>
-            <div class="col l-3">
+          {/* <div className="row wellProject" style={{ marginTop: "50px" }}>
+            <div className="col l-3">
               {" "}
-              <div class="well shadow up-hover color-hover ">
-                <img src={avatar} alt="Avatar" class="ava" />
+              <div className="well shadow up-hover color-hover ">
+                <img src={avatar} alt="Avatar" className="ava" />
                 <h2>{portfolioList.junProject.projectName}</h2>
               </div>
             </div>
-            <div class="col l-9">
+            <div className="col l-9">
               {" "}
-              <div class="well shadow up-hover color-hover ">
+              <div className="well shadow up-hover color-hover ">
                 <h1>
                   <FaDev style={{ display: "inline-block" }} />
                 </h1>
                 <h2>Responsive Web Design</h2>
-                <div class="projectInfor">
+                <div className="projectInfor">
                   <p>
                     A portfolio website to introduce myself and show all the
                     project I have done. Following the best practices and latest
@@ -128,12 +128,12 @@ const Portfolio = () => {
                     <FaCss3Alt />
                     <SiJavascript />
                   </h1>
-                  <div class="btnSide">
-                    <div class="btnLeft">
-                      <a href="!#" class="btn s-full-width">
+                  <div className="btnSide">
+                    <div className="btnLeft">
+                      <a href="!#" className="btn s-full-width">
                         Check online
                       </a>
-                      <a href="!#" class="btn s-full-width">
+                      <a href="!#" className="btn s-full-width">
                         Github
                       </a>
                     </div>
@@ -143,22 +143,22 @@ const Portfolio = () => {
             </div>
           </div> */}
           {/* ommy */}
-          <div class="row wellProject">
-            <div class="col l-3">
+          <div className="row wellProject">
+            <div className="col l-3">
               {" "}
-              <div class="well shadow up-hover color-hover ">
-                <img src={ommy} alt="Avatar" class="ava" />
+              <div className="well shadow up-hover color-hover ">
+                <img src={ommy} alt="Avatar" className="ava" />
                 <h2>Ommy Ecommerce</h2>
               </div>
             </div>
-            <div class="col l-9">
+            <div className="col l-9">
               {" "}
-              <div class="well shadow up-hover color-hover ">
+              <div className="well shadow up-hover color-hover ">
                 <h1>
                   <FaShopify style={{ display: "inline-block" }} />
                 </h1>
                 <h2>Responsive Web Design</h2>
-                <div class="projectInfor">
+                <div className="projectInfor">
                   <p>
                     An E-commerce selling swimwear website. It was a group
                     project with two members.
@@ -181,17 +181,17 @@ const Portfolio = () => {
                     <FaReact />
                     <FaNodeJs />
                   </h1>
-                  <div class="btnSide">
-                    <div class="btnLeft">
+                  <div className="btnSide">
+                    <div className="btnLeft">
                       <a
                         href="https://ommy-surf.herokuapp.com/"
-                        class="btn s-full-width"
+                        className="btn s-full-width"
                         target="_blank"
                         rel="noreferrer"
                       >
                         Check online
                       </a>
-                      <a href="!#" class="btn s-full-width">
+                      <a href="!#" className="btn s-full-width">
                         Github
                       </a>
                     </div>
@@ -201,22 +201,22 @@ const Portfolio = () => {
             </div>
           </div>
           {/* music Band */}
-          <div class="row wellProject">
-            <div class="col l-3">
+          <div className="row wellProject">
+            <div className="col l-3">
               {" "}
-              <div class="well shadow up-hover color-hover ">
-                <img src={band} alt="Avatar" class="ava" />
+              <div className="well shadow up-hover color-hover ">
+                <img src={band} alt="Avatar" className="ava" />
                 <h2>Music Band</h2>
               </div>
             </div>
-            <div class="col l-9">
+            <div className="col l-9">
               {" "}
-              <div class="well shadow up-hover color-hover ">
+              <div className="well shadow up-hover color-hover ">
                 <h1>
                   <FaRegLightbulb style={{ display: "inline-block" }} />
                 </h1>
                 <h2>Information</h2>
-                <div class="projectInfor">
+                <div className="projectInfor">
                   <p>First line</p>
                   <p>Second line</p>
                   <p>
@@ -229,12 +229,12 @@ const Portfolio = () => {
                     <FaReact />
                     <FaNodeJs />
                   </h1>
-                  <div class="btnSide">
-                    <div class="btnLeft">
-                      <a href="!#" class="btn s-full-width" target="_blank">
+                  <div className="btnSide">
+                    <div className="btnLeft">
+                      <a href="!#" className="btn s-full-width" target="_blank">
                         Check online
                       </a>
-                      <a href="!#" class="btn s-full-width">
+                      <a href="!#" className="btn s-full-width">
                         Github
                       </a>
                     </div>
@@ -244,22 +244,22 @@ const Portfolio = () => {
             </div>
           </div>
           {/* Inventory */}
-          <div class="row wellProject">
-            <div class="col l-3">
+          <div className="row wellProject">
+            <div className="col l-3">
               {" "}
-              <div class="well shadow up-hover color-hover ">
-                <img src={inventory} alt="Avatar" class="ava" />
+              <div className="well shadow up-hover color-hover ">
+                <img src={inventory} alt="Avatar" className="ava" />
                 <h2>Inventory Control</h2>
               </div>
             </div>
-            <div class="col l-9">
+            <div className="col l-9">
               {" "}
-              <div class="well shadow up-hover color-hover ">
+              <div className="well shadow up-hover color-hover ">
                 <h1>
                   <FaRegLightbulb style={{ display: "inline-block" }} />
                 </h1>
                 <h2>Information</h2>
-                <div class="projectInfor">
+                <div className="projectInfor">
                   <p>First line</p>
                   <p>Second line</p>
                   <p>
@@ -272,15 +272,15 @@ const Portfolio = () => {
                     <FaReact />
                     <FaNodeJs />
                   </h1>
-                  <div class="btnSide">
-                    <div class="btnLeft">
-                      <a href="!#" class="btn s-full-width" target="_blank">
+                  <div className="btnSide">
+                    <div className="btnLeft">
+                      <a href="!#" className="btn s-full-width" target="_blank">
                         Check online
                       </a>
-                      <a href="!#" class="btn s-full-width">
+                      <a href="!#" className="btn s-full-width">
                         Github
                       </a>
-                      <a href="!#" class="btn s-full-width">
+                      <a href="!#" className="btn s-full-width">
                         Backend
                       </a>
                     </div>
@@ -290,22 +290,22 @@ const Portfolio = () => {
             </div>
           </div>
           {/* musicPlay */}
-          <div class="row wellProject">
-            <div class="col l-3">
+          <div className="row wellProject">
+            <div className="col l-3">
               {" "}
-              <div class="well shadow up-hover color-hover ">
-                <img src={musicPlay} alt="Avatar" class="ava" />
+              <div className="well shadow up-hover color-hover ">
+                <img src={musicPlay} alt="Avatar" className="ava" />
                 <h2>Music Player</h2>
               </div>
             </div>
-            <div class="col l-9">
+            <div className="col l-9">
               {" "}
-              <div class="well shadow up-hover color-hover ">
+              <div className="well shadow up-hover color-hover ">
                 <h1>
                   <FaRegLightbulb style={{ display: "inline-block" }} />
                 </h1>
                 <h2>Information</h2>
-                <div class="projectInfor">
+                <div className="projectInfor">
                   <p>First line</p>
                   <p>Second line</p>
                   <p>
@@ -318,12 +318,12 @@ const Portfolio = () => {
                     <FaReact />
                     <FaNodeJs />
                   </h1>
-                  <div class="btnSide">
-                    <div class="btnLeft">
-                      <a href="#" class="btn s-full-width" target="_blank">
+                  <div className="btnSide">
+                    <div className="btnLeft">
+                      <a href="#" className="btn s-full-width" target="_blank">
                         Check online
                       </a>
-                      <a href="!#" class="btn s-full-width">
+                      <a href="!#" className="btn s-full-width">
                         Github
                       </a>
                     </div>
@@ -333,22 +333,22 @@ const Portfolio = () => {
             </div>
           </div>
           {/* todo */}
-          <div class="row wellProject">
-            <div class="col l-3">
+          <div className="row wellProject">
+            <div className="col l-3">
               {" "}
-              <div class="well shadow up-hover color-hover ">
-                <img src={todo} alt="Avatar" class="ava" />
+              <div className="well shadow up-hover color-hover ">
+                <img src={todo} alt="Avatar" className="ava" />
                 <h2>Todo List</h2>
               </div>
             </div>
-            <div class="col l-9">
+            <div className="col l-9">
               {" "}
-              <div class="well shadow up-hover color-hover ">
+              <div className="well shadow up-hover color-hover ">
                 <h1>
                   <FaRegLightbulb style={{ display: "inline-block" }} />
                 </h1>
                 <h2>Information</h2>
-                <div class="projectInfor">
+                <div className="projectInfor">
                   <p>First line</p>
                   <p>Second line</p>
                   <p>
@@ -361,12 +361,12 @@ const Portfolio = () => {
                     <FaReact />
                     <FaNodeJs />
                   </h1>
-                  <div class="btnSide">
-                    <div class="btnLeft">
-                      <a href="!#" class="btn s-full-width" target="_blank">
+                  <div className="btnSide">
+                    <div className="btnLeft">
+                      <a href="!#" className="btn s-full-width" target="_blank">
                         Check online
                       </a>
-                      <a href="!#" class="btn s-full-width">
+                      <a href="!#" className="btn s-full-width">
                         Github
                       </a>
                     </div>
@@ -376,22 +376,22 @@ const Portfolio = () => {
             </div>
           </div>
           {/*javaRoster  */}
-          <div class="row wellProject">
-            <div class="col l-3">
+          <div className="row wellProject">
+            <div className="col l-3">
               {" "}
-              <div class="well shadow up-hover color-hover ">
-                <img src={javaRoster} alt="Avatar" class="ava" />
+              <div className="well shadow up-hover color-hover ">
+                <img src={javaRoster} alt="Avatar" className="ava" />
                 <h2>GoRoster</h2>
               </div>
             </div>
-            <div class="col l-9">
+            <div className="col l-9">
               {" "}
-              <div class="well shadow up-hover color-hover ">
+              <div className="well shadow up-hover color-hover ">
                 <h1>
                   <FaRegLightbulb style={{ display: "inline-block" }} />
                 </h1>
                 <h2>Information</h2>
-                <div class="projectInfor">
+                <div className="projectInfor">
                   <p>First line</p>
                   <p>Second line</p>
                   <p>
@@ -404,12 +404,12 @@ const Portfolio = () => {
                     <FaReact />
                     <FaNodeJs />
                   </h1>
-                  <div class="btnSide">
-                    <div class="btnLeft">
-                      <a href="!#" class="btn s-full-width" target="_blank">
+                  <div className="btnSide">
+                    <div className="btnLeft">
+                      <a href="!#" className="btn s-full-width" target="_blank">
                         Check online
                       </a>
-                      <a href="!#" class="btn s-full-width">
+                      <a href="!#" className="btn s-full-width">
                         Github
                       </a>
                     </div>
@@ -419,22 +419,22 @@ const Portfolio = () => {
             </div>
           </div>
           {/*Element game  */}
-          <div class="row wellProject">
-            <div class="col l-3">
+          <div className="row wellProject">
+            <div className="col l-3">
               {" "}
-              <div class="well shadow up-hover color-hover ">
-                <img src={elementGame} alt="Avatar" class="ava" />
+              <div className="well shadow up-hover color-hover ">
+                <img src={elementGame} alt="Avatar" className="ava" />
                 <h2>Three Elements game</h2>
               </div>
             </div>
-            <div class="col l-9">
+            <div className="col l-9">
               {" "}
-              <div class="well shadow up-hover color-hover ">
+              <div className="well shadow up-hover color-hover ">
                 <h1>
                   <FaRegLightbulb style={{ display: "inline-block" }} />
                 </h1>
                 <h2>Information</h2>
-                <div class="projectInfor">
+                <div className="projectInfor">
                   <p>First line</p>
                   <p>Second line</p>
                   <p>
@@ -447,12 +447,12 @@ const Portfolio = () => {
                     <FaReact />
                     <FaNodeJs />
                   </h1>
-                  <div class="btnSide">
-                    <div class="btnLeft">
-                      <a href="!#" class="btn s-full-width" target="_blank">
+                  <div className="btnSide">
+                    <div className="btnLeft">
+                      <a href="!#" className="btn s-full-width" target="_blank">
                         Check online
                       </a>
-                      <a href="!#" class="btn s-full-width">
+                      <a href="!#" className="btn s-full-width">
                         Github
                       </a>
                     </div>
