@@ -1,43 +1,43 @@
-import React from "react";
+import React from 'react';
 // import "./main.css";
-import "../../css/grid.css";
-import "./main.css";
+import '../../css/grid.css';
+import './main.css';
 
-import { FaGlobeAmericas } from "react-icons/fa";
+import { FaGlobeAmericas } from 'react-icons/fa';
 
-import avatar from "../../img/n.jpg";
+import avatar from '../../img/n.jpg';
 
 const Main = () => {
   return (
-    <div class="main">
-      <div class="grid wide">
-        <div class="wrapInfor">
-          <div class="row">
-            <div class="col l-5 avatar">
-              <img src={avatar} alt="Avatar" class="ava" />
+    <div className="main">
+      <div className="grid wide">
+        <div className="wrapInfor">
+          <div className="row">
+            <div className="col l-5 avatar">
+              <img src={avatar} alt="Avatar" className="ava" />
             </div>
-            <div class="col l-7 infor">
-              <div class="infoBox">
-                <p class="sayHi">Hello</p>
+            <div className="col l-7 infor">
+              <div className="infoBox">
+                <p className="sayHi">Hello</p>
 
-                <div class="inforName">
+                <div className="inforName">
                   <p>
                     <span>I'm</span> Jun Hoang
                   </p>
 
-                  <i class="bi-globe"></i>
+                  <i className="bi-globe"></i>
 
                   <p>
-                    <span class="iconInfor">
+                    <span className="iconInfor">
                       <FaGlobeAmericas />
-                    </span>{" "}
+                    </span>{' '}
                     Mobile App & Web Developer
                   </p>
                 </div>
                 <hr />
 
-                <div class="detailInfor">
-                  <div class="textInfor">
+                <div className="detailInfor">
+                  <div className="textInfor">
                     <p>
                       A developer always tries the best at every single
                       opportunity given, focusing and loving to learn new
@@ -46,17 +46,19 @@ const Main = () => {
                       cross-apps from scratch, graduate with a portfolio with
                       coding languages and related as:
                     </p>
-                    <div class="codeLang">
-                      <div class="row">
-                        <div class="col l-6 ">
+                    <div className="codeLang">
+                      <div className="row">
+                        <div className="col l-6 ">
                           ● Javascript ● ReactJS ● React Native
                         </div>
-                        <div class="col l-6">● MySQL ● MongoDB ● Firebase</div>
-                        <div class="col l-6">
+                        <div className="col l-6">
+                          ● MySQL ● MongoDB ● Firebase
+                        </div>
+                        <div className="col l-6">
                           ● Visual Studio Code ● Android studio
                         </div>
-                        <div class="col l-6">
-                          ● NodeJS ● Java ● C++ ● React Native{" "}
+                        <div className="col l-6">
+                          ● NodeJS ● Java ● C++ ● React Native{' '}
                         </div>
                       </div>
                     </div>
@@ -68,13 +70,13 @@ const Main = () => {
                       </i>
                     </p>
                   </div>
-                  <div class="row">
-                    <div class="col l-4 l-o-2 bold">Nationality</div>
-                    <div class="col l-4">Vietnamese</div>
+                  <div className="row">
+                    <div className="col l-4 l-o-2 bold">Nationality</div>
+                    <div className="col l-4">Vietnamese</div>
                   </div>
-                  <div class="row">
-                    <div class="col l-4 l-o-2 bold">Address</div>
-                    <div class="col l-4">Sydney, Australia</div>
+                  <div className="row">
+                    <div className="col l-4 l-o-2 bold">Address</div>
+                    <div className="col l-4">Sydney, Australia</div>
                   </div>
                 </div>
               </div>
