@@ -8,6 +8,11 @@ const PortfolioDetail = ({
   desc,
   techs,
   icons,
+  onlineLink,
+  githubLink,
+  serverLink,
+  displayBtn,
+  displayGitBE,
 }) => {
   return (
     <div>
@@ -36,11 +41,31 @@ const PortfolioDetail = ({
               </h1>
               <div className="btnSide">
                 <div className="btnLeft">
-                  <a href="!#" className="btn s-full-width">
+                  <a
+                    href={onlineLink}
+                    className="btn s-full-width"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ display: displayBtn }}
+                  >
                     Check online
                   </a>
-                  <a href="!#" className="btn s-full-width">
+                  <a
+                    href={githubLink}
+                    className="btn s-full-width"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Github
+                  </a>
+                  <a
+                    href={serverLink}
+                    className="btn s-full-width"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ display: displayGitBE }}
+                  >
+                    Server-side
                   </a>
                 </div>
               </div>

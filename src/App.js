@@ -2,7 +2,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
-import Portfolio from "./pages/Portfolio/Portfolio";
+import Portfolio from "./pages/portfolio/Portfolio";
 
 function App() {
   return (
