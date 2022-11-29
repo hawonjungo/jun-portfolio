@@ -1,18 +1,4 @@
 import React from "react";
-import {
-  FaCode,
-  FaRegLightbulb,
-  FaMegaport,
-  FaReact,
-  FaHtml5,
-  FaCss3Alt,
-  FaDev,
-  FaNodeJs,
-  FaShopify,
-} from "react-icons/fa";
-import { MdDraw } from "react-icons/md";
-import { SiJavascript, SiMongodb, SiExpress } from "react-icons/si";
-import avatar from "../img/n.jpg";
 
 const PortfolioDetail = ({
   projectImg,
@@ -40,9 +26,9 @@ const PortfolioDetail = ({
             <h1>{projectIcon}</h1>
             <h2>{projectSubName}</h2>
             <div className="projectInfor">
-              <p>{desc}</p>
-              <p>Technologies involved:</p>
-              <p> {techs}</p>
+              <p> {desc}</p>
+              <p>- Technologies involved:</p>
+              <p>{techs}</p>
               <h1>
                 {icons.map((icon) => {
                   return icon;
