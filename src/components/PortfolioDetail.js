@@ -16,9 +16,10 @@ import avatar from "../img/n.jpg";
 
 const PortfolioDetail = ({
   projectImg,
+  projectIcon,
   projectName,
   projectSubName,
-  decs,
+  desc,
   techs,
   icons,
 }) => {
@@ -36,12 +37,10 @@ const PortfolioDetail = ({
         <div className="col l-9">
           {" "}
           <div className="well shadow up-hover color-hover ">
-            <h1>
-              <FaDev style={{ display: "inline-block" }} />
-            </h1>
+            <h1>{projectIcon}</h1>
             <h2>{projectSubName}</h2>
             <div className="projectInfor">
-              <p>{decs}</p>
+              <p>{desc}</p>
               <p>Technologies involved:</p>
               <p> {techs}</p>
               <h1>
