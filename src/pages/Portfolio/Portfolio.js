@@ -54,7 +54,7 @@ const Portfolio = () => {
       projectName: "Jun's Portfolio",
       projectSubName: "Responsive Web Design",
       desc:
-        "A portfolio website to introduce myself and show all the project I have done. Following the best practices and latest trends in ReactJS and responsive web development using HTML5 and CSS.",
+        "A portfolio website to introduce myself and show all the projects that I had done. Following the best practices and latest trends in ReactJS and responsive web development using HTML5 and CSS.",
       techs: "React, HTML, CSS, JavaScript.",
       icons: [<FaReact />, <FaHtml5 />, <FaCss3Alt />, <SiJavascript />],
       onlineLink: "",
@@ -152,7 +152,7 @@ const Portfolio = () => {
       projectName: "GoRoster",
       projectSubName: "Android Application",
       desc:
-        "Keep sending availability to my boss when I used to work at a coffee shop for roster gave me the idea to create a Roster application. In this project, working on creating different screens and basic logic functions how to help users send their availability to the manager, and the manager manages to create the main roster, so all the staff can check it online.",
+        "Keep sending availability by messenger to my boss when I used to work at a coffee shop, that was annoying and bring me the idea to create a Roster application for our shop. In this project, working on creating different screens and basic logic functions how to help staff send their availability to the manager, and the manager manages to create the main roster, so all the staff can check it on the app",
       techs: "100% JAVA.",
       icons: [<FaJava />],
       onlineLink: "",
@@ -227,6 +227,7 @@ const Portfolio = () => {
             <FaMegaport style={{ width: "50px" }} />
             Projects
           </h1>
+          <h4>Some projects will update to be online soon.</h4>
           {portfolioList.map((project, index) => (
             <PortfolioDetail
               key={index}

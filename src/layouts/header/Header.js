@@ -8,7 +8,7 @@ const Header = () => {
       {" "}
       <div className="row">
         <div className="nav">
-          <a className="col l-2   " href="/">
+          <a className="col l-2 " href="/">
             <span></span>
             <span></span>
             <span></span>
