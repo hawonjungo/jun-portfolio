@@ -1,0 +1,45 @@
+.contactContain {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  background-color: white;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.contactContain h1 {
+  margin-top: 4rem;
+}
+
+.contactContain form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contactForm {
+  margin-bottom: 4rem;
+}
+input,
+select,
+textarea {
+  padding: 1.4rem;
+  background-color: transparent;
+  border: 1px solid black;
+}
+.contactContain textarea {
+  height: 6rem;
+}
+.contactForm button {
+  width: 8rem;
+  padding: 1.4rem;
+  cursor: pointer;
+  background-color: #c15b22;
+  color: white;
+  border: none;
+}
+.submitBtn {
+  width: 24rem;
+  place-items: center;
+}

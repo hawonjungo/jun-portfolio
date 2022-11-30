@@ -8,21 +8,21 @@ const Header = () => {
       {" "}
       <div className="row">
         <div className="nav">
-          <a className="col l-1 m-12 " href="/">
+          <a className="col l-2   " href="/">
             <span></span>
             <span></span>
             <span></span>
             <span></span>
             About
           </a>
-          <a className="col l-1 m-12 " href="/portfolio">
+          <a className="col l-2 " href="/portfolio">
             <span></span>
             <span></span>
             <span></span>
             <span></span>
             Portfolio
           </a>
-          <a className="col l-1 m-12 " href="!#">
+          <a className="col l-2  " href="/contact">
             <span></span>
             <span></span>
             <span></span>

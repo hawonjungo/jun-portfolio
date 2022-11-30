@@ -26,6 +26,7 @@ import {
   SiMongodb,
   SiExpress,
   SiCplusplus,
+  SiFirebase,
 } from "react-icons/si";
 
 import Header from "../../layouts/header/Header";
@@ -47,26 +48,30 @@ const Portfolio = () => {
   const portfolioList = [
     {
       id: 1,
+      projectId: "junPort",
       projectImg: avatar,
       projectIcon: <FaDev />,
       projectName: "Jun's Portfolio",
       projectSubName: "Responsive Web Design",
-      desc: "A portfolio website to introduce myself and show all the project I have done. Following the best practices and latest trends in ReactJS and responsive web development using HTML5 and CSS.",
+      desc:
+        "A portfolio website to introduce myself and show all the project I have done. Following the best practices and latest trends in ReactJS and responsive web development using HTML5 and CSS.",
       techs: "React, HTML, CSS, JavaScript.",
       icons: [<FaReact />, <FaHtml5 />, <FaCss3Alt />, <SiJavascript />],
       onlineLink: "",
       githubLink: "https://github.com/hawonjungo/jun-portfolio",
       serverLink: "",
-      displayBtn: "none",
+      displayBtn: "",
       displayGitBE: "none",
     },
     {
       id: 2,
+      projectId: "ommy",
       projectImg: ommy,
       projectIcon: <FaShopify />,
       projectName: "Ommy Ecommerce",
       projectSubName: "Responsive Web Design",
-      desc: "An E-commerce selling swimwear website. It was a group project with two members. Working with clients in order to ensure a friendly user interface, and make sure the website had what they needed such as single-page detail products, shopping carts, payment sections..etc. Always communicated, and then worked together to deliver the best e-commerce solutions, helping client show and organize products. Currently the database had expried, so there isn't showing any products.",
+      desc:
+        "An E-commerce selling swimwear website. It was a group project with two members. Working with clients in order to ensure a friendly user interface, and make sure the website had what they needed such as single-page detail products, shopping carts, payment sections..etc. Always communicated, and then worked together to deliver the best e-commerce solutions, helping client show and organize products. Currently the database had expried, so there isn't showing any products.",
       techs:
         "MERN( MongoDB, Express, ReactJS, NodeJS), build RESTful API for products.",
       icons: [<SiMongodb />, <SiExpress />, <FaReact />, <FaNodeJs />],
@@ -82,7 +87,8 @@ const Portfolio = () => {
       projectIcon: <MdImportantDevices />,
       projectName: "Music band",
       projectSubName: "Responsive Web Design",
-      desc: " Practicing with W3C project to understand and have more knowledge about a responsive website on multiple devices. Controlling hidden nav menu, working with Row and Column layers, and the position of all the elements in the web.",
+      desc:
+        " Practicing with W3C project to understand and have more knowledge about a responsive website on multiple devices. Controlling hidden nav menu, working with Row and Column layers, and the position of all the elements in the web.",
       techs: " HTML, CSS.",
       icons: [<FaHtml5 />, <FaCss3Alt />],
       onlineLink: "",
@@ -97,7 +103,8 @@ const Portfolio = () => {
       projectIcon: <MdInventory />,
       projectName: "Inventory control",
       projectSubName: "Responsive Web Design",
-      desc: "Uni project, the idea was to create an Inventory Control for my family's small business, helping them to control orders, and manage all the daily products in and out. Using react to break the website into different components, HOOKS handles all the states, combined with CRUD( create, read, update, delete) with fake RESTful API, a bit backend, and stored data on MongoDB.",
+      desc:
+        "Uni project, the idea was to create an Inventory Control for my family's small business, helping them to control orders, and manage all the daily products in and out. Using react to break the website into different components, HOOKS handles all the states, combined with CRUD( create, read, update, delete) with fake RESTful API, a bit backend, and stored data on MongoDB.",
       techs: " React, MongoDB.",
       icons: [<FaReact />, <SiMongodb />],
       onlineLink: "",
@@ -112,7 +119,8 @@ const Portfolio = () => {
       projectIcon: <FaMusic />,
       projectName: "Music Player",
       projectSubName: "Javascript practicing",
-      desc: "Create a basic music player to practice Javascript knowledge, controlling all the music player functions logic as pause, next, skip... As practice as a personal project, planning to public and enjoy my own album music online. ",
+      desc:
+        "Create a basic music player to practice Javascript knowledge, controlling all the music player functions logic as pause, next, skip... As practice as a personal project, planning to public and enjoy my own album music online. ",
       techs: " HTML, CSS , Javascript.",
       icons: [<FaHtml5 />, <FaCss3Alt />, <SiJavascript />],
       onlineLink: "",
@@ -127,9 +135,10 @@ const Portfolio = () => {
       projectIcon: <MdDeviceUnknown />,
       projectName: "2Do List",
       projectSubName: "Cross-App",
-      desc: "- Uni project as a group with two people to understand what Cross-App was. Working with React-Native to create an app on different platforms such as Apple and Android. Used Android Studio, created different screens, verified users, and stored data on Firebase.",
-      techs: " React-Native, MongoDB.",
-      icons: [<FaReact />, <SiMongodb />],
+      desc:
+        "Uni project as a group with two people to understand what Cross-App was. Working with React-Native to create an app on different platforms such as Apple and Android. Used Android Studio, created different screens, verified users, and stored data on Firebase.",
+      techs: " React-Native, Firebase",
+      icons: [<FaReact />, <SiFirebase />],
       onlineLink: "",
       githubLink: "https://github.com/mystatus987/todo_list_react_native",
       serverLink: "",
@@ -142,7 +151,8 @@ const Portfolio = () => {
       projectIcon: <FaCalendarTimes />,
       projectName: "GoRoster",
       projectSubName: "Android Application",
-      desc: "Keep sending availability to my boss when I used to work at a coffee shop for roster gave me the idea to create a Roster application. In this project, working on creating different screens and basic logic functions how to help users send their availability to the manager, and the manager manages to create the main roster, so all the staff can check it online.",
+      desc:
+        "Keep sending availability to my boss when I used to work at a coffee shop for roster gave me the idea to create a Roster application. In this project, working on creating different screens and basic logic functions how to help users send their availability to the manager, and the manager manages to create the main roster, so all the staff can check it online.",
       techs: "100% JAVA.",
       icons: [<FaJava />],
       onlineLink: "",
@@ -157,7 +167,8 @@ const Portfolio = () => {
       projectIcon: <FaGamepad />,
       projectName: "Three Elements",
       projectSubName: "Game",
-      desc: "A keyboarding game for practicing fast fingers. The logic was combining different keys to create multiple skills to kill different monsters, each skill can only kill one type of monster. This project was created in year two at college, it hasn't finished yet but overall 70% of the game function have been deployed in the code section, however you can test on the prototype to see how it could look like. Mainly learned about OOP. ",
+      desc:
+        "Mainly learned about OOP. A keyboarding game for practicing fast fingers. The logic was combining different keys to create multiple skills to kill different monsters, each skill can only kill one type of monster. This project was created in year two at college, it hasn't finished yet but overall 70% of the game function have been deployed in the code section, however you can only test on the prototype at the moment, seeing how it could look like. Will come back and work on it 'one have free time'",
       techs: "100% C++.",
       icons: [<SiCplusplus />],
       onlineLink:
@@ -176,6 +187,7 @@ const Portfolio = () => {
           <h1 data-text="A strong willingness to learn">
             <span>A strong willingness to learn</span>
           </h1>
+          <h3> There are so many things I want to learn and improve</h3>
         </div>
       </div>
       <div className="portContainer">

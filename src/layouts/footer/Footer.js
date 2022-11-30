@@ -3,37 +3,44 @@ import "./footer.css";
 import {
   FaGithubSquare,
   FaInstagramSquare,
-  FaYoutubeSquare,
   FaFacebookSquare,
   FaLinkedin,
 } from "react-icons/fa";
 // import "./magnetic.js";
 
 const Footer = () => {
+  const openInNewTab = (url) => {
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
   return (
     <div className="cover">
-      <div className="socialBox">
+      <div className="grid wide  socialBox">
         {" "}
         {/* --partial magnetic-- */}
-        <div className="grid grid-cols-4  social ">
+        <div className=" social ">
           <button
-            onclick="location.href='https://www.facebook.com/junsubarashii'"
-            target="_blank"
-            type="button"
+            onClick={() =>
+              openInNewTab("https://www.facebook.com/junsubarashii")
+            }
           >
             <FaFacebookSquare />
           </button>
-          <button>
+          <button
+            onClick={() =>
+              openInNewTab("https://www.linkedin.com/in/jun-hoang-590a07176/")
+            }
+          >
             <FaLinkedin />
           </button>
-          <button>
+          <button onClick={() => openInNewTab("https://github.com/hawonjungo")}>
             <FaGithubSquare />
           </button>
-          <button>
+          <button
+            onClick={() =>
+              openInNewTab("https://www.instagram.com/jun.subarashii")
+            }
+          >
             <FaInstagramSquare />
-          </button>
-          <button>
-            <FaYoutubeSquare />
           </button>
         </div>
       </div>

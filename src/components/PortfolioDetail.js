@@ -21,7 +21,7 @@ const PortfolioDetail = ({
         <div className="col l-3">
           {" "}
           <div className="well shadow up-hover color-hover ">
-            <img src={projectImg} alt="Avatar" className="ava" />
+            <img src={projectImg} alt="Project IMG" className="ava" />
             <h2>{projectName}</h2>
           </div>
         </div>

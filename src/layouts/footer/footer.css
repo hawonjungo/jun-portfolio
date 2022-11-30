@@ -49,7 +49,7 @@ html {
   background: rgba(255, 255, 255, 0.08);
   color: #fff;
   transition: background 200ms ease, color 200ms ease;
-  /* cursor: none; */
+  cursor: pointer;
 }
 .socialBox:hover button {
   background: rgba(255, 255, 255, 0.04);
