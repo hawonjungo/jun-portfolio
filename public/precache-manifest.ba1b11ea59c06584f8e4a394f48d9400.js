@@ -56,7 +56,7 @@ self.__precacheManifest = [
     "url": "/static/media/pig-workout.b6aabce6.gif"
   },
   {
-    "revision": "bacfb109a3ed037e652e975c6df7fec0",
+    "revision": "84b0ca6801c59aa83b99c186ddae0927",
     "url": "/index.html"
   }
 ];
