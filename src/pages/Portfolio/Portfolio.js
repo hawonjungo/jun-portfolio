@@ -35,6 +35,7 @@ import "./portfolio.css";
 import "../../css/responsive.css";
 import avatar from "../../img/n.jpg";
 import ommy from "../../img/ommy.PNG";
+import rosa from "../../img/rosa1.gif";
 import band from "../../img/musicBand.PNG";
 import inventory from "../../img/inventory.PNG";
 import musicPlay from "../../img/musicPlay.PNG";
@@ -65,6 +66,23 @@ const Portfolio = () => {
     },
     {
       id: 2,
+      projectId: "NodeLearning",
+      projectImg: rosa,
+      projectIcon: <FaNodeJs />,
+      projectName: "NodeJS Learning",
+      projectSubName: "MVC & CRUD",
+      desc:
+        "To be honest... This project was created in a short time. For a job description to prepare and learn, study that knowledge. A project created for learning NodeJS + Express + MongoDB(Mongoose) on F8(fullstack.edu.vn). Understanding about the contructure with MVC and controling with CRUD. Time was running out so I couldn't do any extra work to upgrade UI. But one day will comeback to upgrade UX/UI, or bring this to my ReactJS Portfolio website( relifes.net).",
+      techs: "MongoBD( mongoose), NodeJS, Express",
+      icons: [<SiMongodb />, <SiExpress />, <FaNodeJs />],
+      onlineLink: "",
+      githubLink: "https://github.com/hawonjungo/LearnNode",
+      serverLink: "none",
+      displayBtn: "none",
+      displayGitBE: "none",
+    },
+    {
+      id: 3,
       projectId: "ommy",
       projectImg: ommy,
       projectIcon: <FaShopify />,
@@ -82,7 +100,7 @@ const Portfolio = () => {
       displayGitBE: "",
     },
     {
-      id: 3,
+      id: 4,
       projectImg: band,
       projectIcon: <MdImportantDevices />,
       projectName: "Music band",
@@ -98,7 +116,7 @@ const Portfolio = () => {
       displayGitBE: "none",
     },
     {
-      id: 4,
+      id: 5,
       projectImg: inventory,
       projectIcon: <MdInventory />,
       projectName: "Inventory control",
@@ -114,7 +132,7 @@ const Portfolio = () => {
       displayGitBE: "",
     },
     {
-      id: 5,
+      id: 6,
       projectImg: musicPlay,
       projectIcon: <FaMusic />,
       projectName: "Music Player",
@@ -130,7 +148,7 @@ const Portfolio = () => {
       displayGitBE: "none",
     },
     {
-      id: 6,
+      id: 7,
       projectImg: todo,
       projectIcon: <MdDeviceUnknown />,
       projectName: "2Do List",
@@ -146,7 +164,7 @@ const Portfolio = () => {
       displayGitBE: "none",
     },
     {
-      id: 7,
+      id: 8,
       projectImg: javaRoster,
       projectIcon: <FaCalendarTimes />,
       projectName: "GoRoster",
@@ -162,7 +180,7 @@ const Portfolio = () => {
       displayGitBE: "none",
     },
     {
-      id: 8,
+      id: 9,
       projectImg: elementGame,
       projectIcon: <FaGamepad />,
       projectName: "Three Elements",
